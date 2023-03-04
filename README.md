@@ -3,7 +3,7 @@
 
 This project demonstrates how to implement a door lock system with face recognition using the ESP32-CAM board and the FaceNet model. The system is based on a web server that provides access to the camera stream and a FaceNet algorithm to perform face detection, recognition, and enrollment. The project includes a door lock that can be controlled through a relay connected to the ESP32-CAM board.
 
-Instalaltion
+Installation
 
 You may have to change the IP Address Accordingly To Match your ESP32 module's IP
 ``` java
