@@ -2,17 +2,36 @@
 
 <h5>This project demonstrates how to implement a door lock system with face recognition </h5> <br>Using the ESP32-CAM board and the FaceNet model. The system is based on a web server that provides access to the camera stream and a FaceNet algorithm to perform face detection, recognition, and enrollment. The project includes a door lock that can be controlled through a relay connected to the ESP32-CAM board.
 
-Requirements
-To build this project you will need the following components:
+<h2>Requirements</h2>
+	<ul>
+		<li>ESP32-CAM board</li>
+		<li>USB to TTL serial converter (3.3V)</li>
+		<li>Relay module (5V)</li>
+		<li>5V power supply (at least 1A)</li>
+		<li>Jumper wires</li>
+		<li>Breadboard</li>
+	</ul>
 
-ESP32-CAM board
-USB to TTL serial converter (3.3V)
-Relay module (5V)
-5V power supply (at least 1A)
-Jumper wires
-Breadboard
-Installation
-Clone this repository to your local machine.
+	<h2>Installation</h2>
+	<ol>
+		<li>Clone this repository to your local machine.</li>
+		<li>Install the Arduino IDE.</li>
+		<li>Open the Arduino IDE and navigate to "File" -> "Preferences". Add the following URL to the "Additional Boards Manager URLs" field: https://dl.espressif.com/dl/package_esp32_index.json</li>
+		<li>Navigate to "Tools" -> "Board" -> "Boards Manager". Search for "ESP32" and install the board support package.</li>
+		<li>Connect the ESP32-CAM board to your computer using the USB to TTL serial converter. Make sure the jumper wires are connected as follows:</li>
+		<ul>
+			<li>ESP32-CAM Pin USB to TTL Pin</li>
+			<li>5V VCC</li>
+			<li>GND GND</li>
+			<li>U0T RX</li>
+			<li>U0R TX</li>
+			<li>IO0 GND</li>
+			<li>EN 3.3V</li>
+		</ul>
+		<li>In the Arduino IDE, navigate to "Tools" -> "Board" and select "AI Thinker ESP32-CAM".</li>
+		<li>Navigate to "Tools" -> "Port" and select the COM port for the USB to TTL serial converter.</li>
+		<li>Open the facenet_door_lock.ino sketch from the cloned repository.</li>
+		<li>Replace the following lines with your WiFi credentials:</li>
 
 Install the Arduino IDE.
 
