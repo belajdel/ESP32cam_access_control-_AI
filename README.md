@@ -41,7 +41,3 @@ The code is provided as-is and may require modifications to work in your specifi
 The system can be improved by adding more advanced features such as face liveness detection and multiple face recognition.
 The project is intended for educational purposes only and should not be used in production environments.
 
-## Demo 
-
-![Alt Text](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzFmYzEwMzIzOTRmODAyY2Y1N2ZmNjMzNjBmN2E5ZDliNDg2NjYyMSZjdD1n/P2DPWI3j8ItEjiRoTM/giphy.gif)
-
